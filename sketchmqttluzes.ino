@@ -12,6 +12,9 @@ const char* mqttPassword = "toto";
 int led1 = D0;
 int led2 = D1;
 
+WiFiClient espClient;
+PubSubClient client(espClient);
+
 String msg;
 
 void setup() {
